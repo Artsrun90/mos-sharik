@@ -403,7 +403,7 @@
 
 /*-----ANDROID------*/
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 640px) {
    .header-bg {background-image: none;}
    #logo-area, #site-info-1, #mail-info, #make-call, #bottom-nav {
     display: none;
