@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/custom.css">
+    <link rel="stylesheet" href="assets/style/header.css">
+    <script src="assets/script/header.js"></script>
+    <title>Воздушные шары в Москве, купить шарики в интернет магазине ШарМания</title>
+</head>
+<body>
+    <div class="header-bg" id="header-bg">
+        <div class="container">
+            <header class="main-header">
+                <div class="top-nav">
+                    <div class="logo-area" id="logo-area">
+                        <p class="loco-text-1">Дисконтный магазин №1</p>
+                        <p class="loco-text-2">по воздушным шарам</p>
+                    </div>
+                    <div class="site-info" id="site-info-1">
+                        <div class="work-time">
+                            <img src="assets/images/clock.png" alt="">
+                            <p class="timline">Ежедневно с 8:00–20:00</p>
+                        </div>
+                        <div class="delivery-info">
+                            <img src="assets/images/truck.png" alt="">
+                            <p class="delivery">Доставка круглосуточно</p>
+                        </div>
+                    </div>
+                    <div class="header-search" id="header-search">
+                        <div class="search" id="search">
+                            <input class="search-input" id="search-input" type="text" placeholder="Поиск" name="search" oninput="autocomplate()">
+                            <button class="search-btn" onclick="search()"><img src="" alt="" id="search-icon"></button>
+                        </div>
+                        <div class="autocomplete" id="autocomplete">
+                            <ul class="autocomplete-items-list" id="autocomplete-items-list"></ul>
+                            <a href=""><p class="autocomplete-p">Все результаты</p></a>
+                        </div>
+                    </div>
+                    <div class="site-info" id="site-info-2">
+                        <div class="phone-info" id="phone-info">
+                            <img src="assets/images/phone.png" alt="">
+                            <p class="">+7(495)248-03-45</p>
+                        </div>
+                        <div class="mail-info" id="mail-info">
+                            <img src="assets/images/mail.png" alt="">
+                            <p class="">info@mos-sharik.ru</p>
+                        </div>
+                    </div>
+                    <div class="basket" id="basket">
+                        <a href="">
+                            <div class="basket-circle">
+                                <img src="assets/images/basket-icon.png" alt="">
+                            </div>
+                        </a>
+                        <div class="basket-amount">
+                            <div class="amount-circle">
+                                <p class="amount-text">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-icon" id="mobile-menu-icon" onclick="openMenu()">
+                        <img src="assets/images/menu.png" alt="">
+                    </div>
+                    <div class="make-call" id="make-call">
+                        <button class="call-btn" onclick="callAs()">Заказать звонок</button>
+                    </div>
+                </div>
+            </header>
+            <div class="bottom-nav" id="bottom-nav">
+                <div class="bottom-banner">
+                    <img src="assets/images/balloon left.png" alt="">
+                    <h2>Самые низкие цены<br>на воздушные шары</h2>
+                    <img src="assets/images/balloon right.png" alt="">
+                </div>
+            </div>
+            <div class="mobile-logo-section">
+                <div class="mobile-ball">
+                    <img src="assets/images/balloon left.png" alt="">
+                </div>
+                <div class="logo-area-mobile" id="logo-area-mobile">
+                    <p class="mobile-loco-text">Дисконтный магазин №1</p>
+                    <p class="mobile-loco-text">по воздушным шарам</p>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-close" id="mobile-menu-close" onclick="closeMenu()">
+                <img src="assets/images/close.png" alt="">
+            </div>
+            <div class="mobile-menu-section">
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Цены</a></li>
+                    <li><a href="">Скидки</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Как оформить заказ</a></li>
+                    <li><a href="">Сотрудничество</a></li>
+                    <li><a href="">Статьи</a></li>
+                </ul>
+            </div>                     
+        </div>
+    </div>
+
+    <!--CALL POPUP-->
+    <div class="popup-head" id="popup-head">
+        <div class="call-popup">
+            <div class="popup-close">
+                <a href="" onclick="closePopup()"><span class="close-circle"><img class="close-icon" src="assets/images/close.png" alt=""></span></a>
+            </div>
+            <div class="popup-content">
+                <h2>Заказать звонок</h2>
+                <div class="popup-content-fields">
+                    <input type="text" class="call-input" placeholder="Ваше имя">
+                    <input type="text" class="call-input" placeholder="Ваш номер телефона">
+                    <input type="text" class="call-input" placeholder="Ваш e-mail (не обязательно)">
+                </div>
+                <button class="popup-call-btn" onclick="sendMessage()">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <!--CALL POPUP SUCCSSESFULL-->
+    <div class="popup-head-success" id="popup-head-success">
+        <div class="call-popup-success">
+            <div class="popup-close">
+                <a href=""><span class="close-circle"><img class="close-icon" src="assets/images/close.png" alt=""></span></a>
+            </div>     
+            <div class="popup-content-success">
+                <img src="assets/images/popup-ball.png" alt="">
+                <div class="popup-content-fields">
+                    <h2>Ваша заявка успешно оправлена</h2>
+                    <h3>Мы свяжемся с вами в течении <span id="response-date">ххх</span></h3>
+                </div>             
+            </div>       
+        </div>        
+    </div>
+    
+    
+</body>
+</html>
