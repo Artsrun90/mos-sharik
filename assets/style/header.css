@@ -85,9 +85,10 @@
 .search-btn {
     border: none;
     background: none;
+    height: 24px;
 }
 .search-btn img {
-    content: url(../images/search.png);
+    content: url(../images/search.svg);
 }
 .search-btn:hover {
     cursor: pointer;
@@ -159,6 +160,14 @@
     height: 54px;
     background-color: white;
 }
+.basket-circle img {
+    content: url(../images/basket-icon.svg);
+}
+
+.basket-circle img:hover {
+    content: url(../images/basket-icon-purple.svg);
+}
+
 .basket-amount {
     display: flex;
     justify-content: center;
@@ -169,7 +178,7 @@
     margin-top: -7px;
 }
 .mobile-menu-icon {
-    margin-top: 48px;
+    margin-top: 40px;
     display: none;
 }
 .amount-circle {
@@ -433,9 +442,9 @@
    }
    .mobile-menu-icon {
       display: flex;
-      height: 16px;
+      height: 32px;
    }
-   .search-btn img {content: url(../images/search-black.png);}
+   .search-btn img {content: url(../images/search\ -\ black.svg);}
    .site-info {margin-top: 44px;}
    .phone-info img {filter: brightness(0) invert(1);}
    #site-info-2 {order: 1;}

@@ -34,7 +34,7 @@ function search() {
     let windowSize = window.screen.width;
     let searchEl = document.getElementById("search-input");
     let width = window.getComputedStyle(searchEl).width;
-    if (windowSize <= 450) {
+    if (windowSize <= 640) {
         if (width == "0px") {
             document.getElementById("phone-info").style.display = "none";
             document.getElementById("header-search").style.width = "212px";
