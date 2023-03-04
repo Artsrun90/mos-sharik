@@ -105,6 +105,20 @@ function sendMessage() {
     }    
 }
 
+function closeCatalog() {
+    let ul = document.getElementById("ctalog-list");
+    let display = window.getComputedStyle(ul).display;
+    if (display == "flex") {
+        document.getElementById("arrow").style.transform = "rotate(-225deg)";
+        document.getElementById("arrow").style.top = "0px";
+        ul.style.display = "none";
+    } else {
+        document.getElementById("arrow").style.transform = "rotate(-45deg)";
+        document.getElementById("arrow").style.top = "8px";
+        ul.style.display = "flex";        
+    }
+}
+
 document.onclick = function(e){
     let searchEl = document.getElementById("search-input");
     let width = window.getComputedStyle(searchEl).width;

@@ -86,12 +86,28 @@
             </div>
         </div>
         <div class="mobile-menu" id="mobile-menu">
-            <div class="mobile-menu-close" id="mobile-menu-close" onclick="closeMenu()">
-                <img src="assets/images/close.svg" alt="">
+            <div class="mobile-menu-close">
+                <img id="mobile-menu-close" onclick="closeMenu()" src="assets/images/close.svg" alt="">
             </div>
-            <div class="mobile-menu-section">
+            <div class="mobile-menu-section"> 
                 <ul>
-                    <li><a href="">Главная</a></li>
+                    <div class="mobile-catalog">
+                        <div class="mobile-catalog-title" id="mobile-catalog-title" onclick="closeCatalog()">
+                            <p><strong>Каталог</strong></p>
+                            <i id="arrow" class="arrow"></i>
+                        </div>
+                        <ul id="ctalog-list">
+                            <li><a href="">Шары на День рождения</a></li>
+                            <li><a href="">Гелиевые латексные шары</a></li>
+                            <li><a href="">Праздники и события</a></li>
+                            <li><a href="">Фольгированные шары</a></li>
+                            <li><a href="">Букеты и фонтаны из шаров</a></li>
+                            <li><a href="">Фигуры из шаров</a></li>
+                            <li><a href="">Коллекции шаров</a></li>
+                            <li><a href="">Коробки-сюрприз</a></li>
+                            <li><a href="">Оформление шарами</a></li>
+                        </ul>
+                    </div>
                     <li><a href="">О нас</a></li>
                     <li><a href="">Услуги</a></li>
                     <li><a href="">Цены</a></li>
