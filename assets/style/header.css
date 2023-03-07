@@ -331,6 +331,7 @@
     align-items: flex-start;
     position: absolute;
     gap: 40px;
+    margin-top: 50px;
 }
 .bottom-banner h2 {
     text-align: center;
@@ -553,6 +554,7 @@
 
 @media only screen and (max-width: 1210px)  {
  .middle-screen-menu {display: flex;}
+ .bottom-banner {margin-top: 80px;}
  .site-info-1 {order: 1;}
  .site-info-2 {order: 2;}
  .header-search {order: 3;}
