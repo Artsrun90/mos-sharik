@@ -22,12 +22,27 @@ const data = [
       }
     ]
 
-function openMenu() {
-    document.getElementById("mobile-menu").style.display = "block";
-  }
+function openMobileMenu() {
+    openMenu("mobile-menu");
+}
 
-function closeMenu() {
-  document.getElementById("mobile-menu").style.display = "none";
+function closeMobileMenu() {
+    closeMenu("mobile-menu");
+}
+
+function openMiddleMenu() {
+    openMenu("middle-menu-section");
+}
+
+function closeMiddleMenu() {
+    closeMenu("middle-menu-section");
+}
+
+function openMenu(element) {
+    document.getElementById(element).style.display = "block";
+}
+function closeMenu(element) {
+    document.getElementById(element).style.display = "none";
 }
 
 function search() {
@@ -53,10 +68,10 @@ function callAs() {
 function closePopup() {
     let closeElCall = document.getElementById("popup-head");
     let closeElSuccess = document.getElementById("popup-head-success");
-    if (closeElCall.display == "flex") {
+    if (window.getComputedStyle(closeElCall).display == "flex") {
         closeElCall.style.display = "none";
     }
-    if (closeElSuccess.display == "flex") {
+    if (window.getComputedStyle(closeElSuccess).display == "flex") {
         closeElSuccess.style.display = "none";
     }
 }

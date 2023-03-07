@@ -15,8 +15,7 @@
             <header class="main-header">
                 <div class="top-nav">
                     <div class="logo-area" id="logo-area">
-                        <p class="loco-text-1">Дисконтный магазин №1</p>
-                        <p class="loco-text-2">по воздушным шарам</p>
+                        <img src="assets/images/Logo.svg" alt="">
                     </div>
                     <div class="site-info" id="site-info-1">
                         <div class="work-time">
@@ -60,19 +59,78 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mobile-menu-icon" id="mobile-menu-icon" onclick="openMenu()">
+                    <div class="mobile-menu-icon" id="mobile-menu-icon" onclick="openMobileMenu()">
                         <img src="assets/images/menu.svg" alt="">
                     </div>
                     <div class="make-call" id="make-call">
                         <button class="call-btn" onclick="callAs()">Заказать звонок</button>
                     </div>
+                    <div class="middle-screen-menu">
+                        <div class="middle-menu-btn add-shedow">
+                                <div class="middle-menu-circle" onclick="openMiddleMenu()">
+                                    <img src="" alt="">
+                                </div>
+                        </div>
+                        <div class="middle-menu-section" id="middle-menu-section">
+                            <div class="middle-menu-close">
+                                <img id="middle-menu-close" onclick="closeMiddleMenu()" src="assets/images/close.svg" alt="">
+                            </div>
+                          <div class="menu-items"> 
+                              <ul>
+                                  <div class="mobile-catalog">
+                                      <div class="mobile-catalog-title" id="mobile-catalog-title" onclick="closeCatalog()">
+                                          <p><strong>Каталог</strong></p>
+                                          <i id="arrow" class="arrow"></i>
+                                      </div>
+                                      <ul id="ctalog-list">
+                                          <li><a href="">Шары на День рождения</a></li>
+                                          <li><a href="">Гелиевые латексные шары</a></li>
+                                          <li><a href="">Праздники и события</a></li>
+                                          <li><a href="">Фольгированные шары</a></li>
+                                          <li><a href="">Букеты и фонтаны из шаров</a></li>
+                                          <li><a href="">Фигуры из шаров</a></li>
+                                          <li><a href="">Коллекции шаров</a></li>
+                                          <li><a href="">Коробки-сюрприз</a></li>
+                                          <li><a href="">Оформление шарами</a></li>
+                                      </ul>
+                                  </div>
+                                  <li><a href="">О нас</a></li>
+                                  <li><a href="">Услуги</a></li>
+                                  <li><a href="">Цены</a></li>
+                                  <li><a href="">Скидки</a></li>
+                                  <li><a href="">Доставка</a></li>
+                                  <li><a href="">Контакты</a></li>
+                                  <li><a href="">Как оформить заказ</a></li>
+                                  <li><a href="">Сотрудничество</a></li>
+                                  <li><a href="">Статьи</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="middle-menu-basket add-shedow" id="basket">
+                            <a href="">
+                                <div class="basket-circle">
+                                    <img src="" alt="">
+                                </div>
+                            </a>
+                            <div class="basket-amount">
+                                <div class="amount-circle">
+                                    <p class="amount-text">0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="middle-menu-phone add-shedow">
+                            <div class="middle-menu-phone-circle" onclick="callAs()">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="bottom-nav" id="bottom-nav">
                 <div class="bottom-banner">
-                    <img src="assets/images/balloon left.png" alt="">
+                    <img src="assets/images/balloon-left.svg" alt="">
                     <h2>Самые низкие цены<br>на воздушные шары</h2>
-                    <img src="assets/images/balloon right.png" alt="">
+                    <img class="right-ball" src="assets/images/balloon-right.svg" alt="">
                 </div>
             </div>
             <div class="mobile-logo-section">
@@ -87,7 +145,7 @@
         </div>
         <div class="mobile-menu" id="mobile-menu">
             <div class="mobile-menu-close">
-                <img id="mobile-menu-close" onclick="closeMenu()" src="assets/images/close.svg" alt="">
+                <img id="mobile-menu-close" onclick="closeMobileMenu()" src="assets/images/close.svg" alt="">
             </div>
             <div class="mobile-menu-section"> 
                 <ul>
@@ -122,11 +180,13 @@
         </div>
     </div>
 
+    
+
     <!--CALL POPUP-->
     <div class="popup-head" id="popup-head">
         <div class="call-popup">
             <div class="popup-close">
-                <a href="" onclick="closePopup()"><span class="close-circle"><img class="close-icon" src="assets/images/close.svg" alt=""></span></a>
+                <span class="close-circle" onclick="closePopup()"><img class="close-icon" src="assets/images/close.svg" alt=""></span>
             </div>
             <div class="popup-content">
                 <h2>Заказать звонок</h2>
@@ -144,7 +204,7 @@
     <div class="popup-head-success" id="popup-head-success">
         <div class="call-popup-success">
             <div class="popup-close">
-                <a href=""><span class="close-circle"><img class="close-icon" src="assets/images/close.svg" alt=""></span></a>
+                <span class="close-circle" onclick="closePopup()"><img class="close-icon" src="assets/images/close.svg" alt=""></span>
             </div>     
             <div class="popup-content-success">
                 <img src="assets/images/popup-ball.png" alt="">
