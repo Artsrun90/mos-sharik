@@ -120,9 +120,10 @@ function sendMessage() {
     }    
 }
 
-function closeCatalog() {
-    let ul = document.getElementById("ctalog-list");
+function closeCatalog(id) {
+    let ul = id == "middle-catalog-title" ? document.getElementById("middle-catalog-list") : document.getElementById("mobile-catalog-list");
     let display = window.getComputedStyle(ul).display;
+    console.log(id);
     if (display == "flex") {
         document.getElementById("arrow").style.transform = "rotate(-225deg)";
         document.getElementById("arrow").style.top = "0px";
